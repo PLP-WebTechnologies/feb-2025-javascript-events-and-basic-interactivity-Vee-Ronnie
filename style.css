@@ -1,0 +1,163 @@
+* {background-color: bisque; }
+
+
+input[type=submit] {
+    background-color: hotpink;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+   
+  }
+
+  footer {
+    font-weight:600;
+    font-family:'Trebuchet MS';
+    font-style:italic;
+    color:aqua;
+    text-align: center;
+    text-decoration: overline underline solid navy 3px;
+
+  }
+
+  h1 { 
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium';
+    font-style:oblique;
+    color:rgb(255, 0, 149);
+    text-align:center;
+    text-decoration: underline double navy 2px;
+  }
+
+  image {
+     align-self: center;
+  }
+
+ .heading {
+   color: navy;
+   text-decoration: underline wavy;
+
+ }
+
+ fieldset {
+  border-radius: 5px;
+  border: 5px double hotpink;
+  margin:25px 50px;
+  padding: 25px;
+ }
+
+ #fName, #lName, #DOB, #pwd, #number, #id, #email, #country {
+  border-radius: 5px;
+  border: 5px double navy;
+  margin:25px 50px;
+  padding: 25px;
+  width: 50%;
+ }
+
+#male, #female {
+  border-radius: 5px;
+  margin:25px 50px;
+  padding: 25px;
+}
+table {
+  border: 3px solid navy;
+  width:100%;
+
+}
+
+th, td{
+  border: 5px solid navy;
+  margin: 3px;
+  padding:10px;
+  text-align: center; 
+
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+ 
+}
+
+.contacts{
+  display:flex;
+  flex-flow: column;
+  padding: 20px;
+  margin: 20px;
+
+}
+.contact {
+  display: flex;
+  flex-flow: column;
+  padding: 100px;
+  margin: 20px;
+  gap: 10px; 
+  align-items: center;
+}
+
+.contact-item {
+  border: 2px solid navy;
+  background-color: white; 
+  padding: 15px;
+  border-radius: 8px; 
+  margin: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px ;
+}
+
+
+header {
+  background-color: #80004f;
+  color: white;
+  padding: 40px ;
+}
+
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px ;
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+@media (max-width: 480px) { 
+*{
+   background-color: aqua;
+    margin:0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) { 
+*{margin:0;
+  background-color: coral;}
+
+}
+
+
+
+

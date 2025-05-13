@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Registration Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    img { width: 300px; }
+    .accordion { cursor: pointer; padding: 10px; border: 1px solid #ccc; margin-top: 10px; transition: 0.3s; }
+    .panel { display: none; padding: 10px; background: #f9f9f9; border: 1px solid #ccc; }
+    .highlight { background-color: yellow; }
+    .hidden { display: none; }
+    #slideshow img { width: 300px; height: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <h1>APPLICATION QUESTIONNAIRE</h1>
+  <h3>Which position are you applying for?</h3>
+  <ol type="i">
+    <li>Software Engineer</li>
+    <li>Data Scientist</li>
+    <li>Web Developer</li>
+    <li>Project Manager</li>
+    <li>Accountant</li>
+    <li>Human Resource Manager</li>
+  </ol>
+  <p>Answer: <input type="text"></p>
+
+  <h1>REGISTRATION FORM</h1>
+  <p>This form will collect your details. Please fill it accurately. Dishonesty will lead to disqualification.</p>
+
+  <form id="regForm">
+    <fieldset>
+      <legend><h2 class="heading">Personal Information</h2></legend>
+      <p>What is your gender?</p>
+      <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label><br><br>
+
+      <label for="fName">First Name</label><br>
+      <input type="text" id="fName" name="fName" required><br><br>
+
+      <label for="lName">Last Name</label><br>
+      <input type="text" id="lName" name="lName" required><br><br>
+
+      <label for="DOB">Date of Birth</label><br>
+      <input type="date" id="DOB" name="DOB" required><br><br>
+
+      <label for="pwd">Password (min 8 characters)</label><br>
+      <input type="password" id="pwd" name="pwd" required><br>
+      <small id="pwdFeedback"></small>
+    </fieldset>
+
+    <fieldset>
+      <legend><h2 class="heading">Contact Information</h2></legend>
+      <label for="number">Phone number</label><br>
+      <input type="tel" id="number" name="number" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <small id="emailFeedback"></small><br><br>
+    </fieldset>
+
+    <input type="submit" value="SUBMIT">
+  </form>
+
+  <h3>Gallery</h3>
+  <div id="slideshow">
+    <img src="img1.jpg" alt="Slide 1">
+  </div>
+
+  <h3>Accordion Example</h3>
+  <div class="accordion">Click me for more info</div>
+  <div class="panel">Here is some hidden content!</div>
+
+  <button id="magicBtn">Click Me!</button>
+  <button id="colorToggle">Toggle Color</button>
+
+  <footer>
+    <img src="image.png" alt="logo"> All rights reserved
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
